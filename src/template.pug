@@ -1,0 +1,50 @@
+doctype html
+html(lang='ru')
+    head
+        meta(charset='utf-8')
+        title='Интернет-магазин Bookshop'
+    body
+        .container
+            header.header
+                .header-block
+                    a.header-logo(href='/') Bookshop
+                    ul.header-link
+                        li.header-link_item
+                            a.header-link_item_text.active(href='#') books
+                        li.header-link_item
+                            a.header-link_item_text(href='#') audiobooks
+                        li.header-link_item
+                            a.header-link_item_text(href='#') stationery & gifts
+                        li.header-link_item
+                            a.header-link_item_text(href='#') blog
+                    ul.icon-block
+                        li.icon-block_item
+                            img.icon-block_item_user(src=require('./images/user.svg') alt="user")
+                        li.icon-block_item
+                            img.icon-block_item_user(src=require('./images/search.svg') alt="search")
+                        li.icon-block_item
+                            img.icon-block_item_user(src=require('./images/cart.svg') alt="cart")
+                            i.icon-block_item_text 3
+            main.main
+                .slider-block
+                    .slider-block_photo
+                        .slider-block_item_group
+                        .slider-change
+                            a.slider-change_link(href='#') 
+                                | Change old book on new
+                                img.slider-top_link_icon(src=require('./images/arrow.svg') alt="arrow")
+                    .slider-top
+                        a.slider-top_link(href='#') 
+                            | Top 100 books 2022
+                            img.slider-top_link_icon(src=require('./images/arrow.svg') alt="arrow")
+                    .slider-pagination
+                        .slider-pagination_items
+                .main-products
+                    .sidebar-fon
+                    .sidebar-products
+                        .sidebar
+                            .sidebar-category
+                        .products
+                            ul.products-list
+                            button.products-list_load(type='submit') Load more
+        
