@@ -72,7 +72,7 @@ function apiGoogleBook() {
                             <div class="product-data_price_height">
                                 <h4 class="${book.saleInfo.retailPrice ? "product-data_price" : "product-data_price_none"}">$ ${book.saleInfo.retailPrice}</h4>
                             </div>
-                            <button class="product-data_button${activeClass}" type="button">
+                            <button class="product-data_button${activeClass}" type="button" onclick="handleCartLocalStorage(${book.id});">
                                 ${activeText}
                             </button>
                         </div>
